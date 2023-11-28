@@ -96,7 +96,7 @@ class CurrencyConverter
 
     private function getCacheKey()
     {
-        return basename(__CLASS__) . 'Currencies';
+        return str_replace('\\', '-', basename(__CLASS__))  . 'Currencies';
     }
 
     /**
